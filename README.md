@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 ✨ Welcome to my GitHub
 
 Hi, I’m Thu Le ♡
-Junior @ Drexel University studying Computer Science & Engineering
+Junior @ Drexel University studying Computer Science & Maths
 
 🚀 About Me
 
