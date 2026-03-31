@@ -1,0 +1,23 @@
+name: Stats Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check secrets exist
+        env:
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          COUNT_STATS_FROM_FORKS: ${{ secrets.COUNT_STATS_FROM_FORKS }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "ACCESS_TOKEN is missing"
+            exit 1
+          fi
+          if [ -z "$COUNT_STATS_FROM_FORKS" ]; then
+            echo "COUNT_STATS_FROM_FORKS is missing"
+            exit 1
+          fi
+          echo "Secrets are set"
