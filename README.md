@@ -34,12 +34,12 @@ Open-source projects in systems, infra, and performance engineering
 💬 Ask me about:
 C++ | Data structures | System design | Research | Tech career growth
 
-🧠 Interests
+🧠 Interests:
 Building efficient and scalable systems
 Low-level programming & performance tuning
 Turning ideas into real, production-ready projects
 
-⚡ Fun Facts
+⚡ Fun Facts:
 I enjoy solving hard problems… even if it takes hours for a one-line fix
 I like mixing research + real-world engineering
 Sometimes I over-optimize things just for fun 😭
