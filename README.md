@@ -1,45 +1,31 @@
+## Thu Le
 
+CS & Math @ Drexel. I build low-latency systems in C++ and the backends around them.
 
-<!--
-**imbaothu/imbaothu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Most of my work starts the same way: something is slower or less correct than it should be,
+and I want to know exactly why. Usually the answer is a cache line, a lock, or a number
+nobody checked.
 
-Here are some ideas to get you started:
+### Things I've built
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**[Custom Memory Allocator](https://github.com/imbaothu/my-allocator)** · C++17, CMake  
+Three-phase object-pool allocator — free list → pooled slabs → per-thread slab ownership —
+to kill mutex contention in multithreaded trading systems. **3× the throughput of glibc
+malloc at 4 concurrent threads.**
 
-✨ Welcome to my GitHub
+**[Lock-Free SPSC Queue](https://github.com/imbaothu/Lock-free-queue)** · C++17  
+Single-producer/single-consumer queue built on cache-line padding and acquire/release
+atomics. **34× lower p50 and 131× lower p999 latency** than a mutex-based baseline.
 
-Hi, I’m Thu Le ♡
-Junior @ Drexel University studying Computer Science & Maths
+**Equity Research & Backtesting Platform** · Python, FastAPI, PostgreSQL, Redis, C++17  
+Market data ingestion → factor scoring → point-in-time backtesting, with a C++ engine
+cross-validated against an independent Python reference implementation. Caught a drawdown
+calculation that reported a 50% loss as no loss at all.
 
-🚀 About Me
+### Currently
 
-🔭 Currently working on:
-C++ | Systems Programming | Infrastructure | Backend Development
+Going deeper on memory models, lock-free data structures, and where latency actually hides
+in a system. Interested in quant infrastructure and anything performance-critical.
 
-🌱 Currently learning:
-Low-level systems | Memory management | Distributed systems | Performance optimization
+📫 lebaothu678@gmail.com
 
-👯 Looking to collaborate on:
-Open-source projects in systems, infra, and performance engineering
-
-💬 Ask me about:
-C++ | Data structures | System design | Research | Tech career growth
-
-🧠 Interests:
-Building efficient and scalable systems |
- Low-level programming & performance tuning | 
- Turning ideas into real, production-ready projects
-
-⚡ Fun Facts:
-I enjoy solving hard problems… even if it takes hours for a one-line fix 
-| I like mixing research + real-world engineering | 
-Sometimes I over-optimize things just for fun 😭
