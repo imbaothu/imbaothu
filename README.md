@@ -28,6 +28,6 @@ atomics. **34× lower p50 and 131× lower p999 latency** than a mutex-based base
 ### Currently
 
 Going deeper on memory models, lock-free data structures, and where latency actually hides
-in a system. Interested in quant infrastructure and anything performance-critical.
+in a system. Interested in quantitative finance, software engineering and anything performance-critical.
 
 📫 lebaothu678@gmail.com
